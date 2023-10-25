@@ -1,0 +1,21 @@
+whylabs_dataset_id: model-15
+policy: my_new_policy
+id: 9294f3fa-4f4b-4363-9397-87d3499fce28
+policy_version: 1
+schema_version: 0.0.1
+
+rules:
+  prompt:
+    - module: textstat
+      metric: character_count
+      upper_threshold: 200
+      
+    - module: toxicity
+      upper_threshold: 0.5
+      
+    - module: regexes
+      # config_path: "path/to/regexes.json"
+    
+  response:
+    - module: input_output
+      upper_threshold: 0.5
