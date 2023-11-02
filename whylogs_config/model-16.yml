@@ -3,8 +3,3 @@ policy: my_other_policy
 id: 0172d4f2-1e9a-4b36-a951-afba6655aa2b
 policy_version: 1
 schema_version: 0.0.1
-
-rules:
-  prompt:
-    - module: toxicity
-      upper_threshold: 0.7
